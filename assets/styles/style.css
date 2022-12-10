@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --ff-primary: 'Poppins', sans-serif;
+    --text-color: #303030;
+
+    --hue: 219;
+    --primary-color: hsl(var(--hue), 100%, 63%);
+}
+
+body *{
+    font-family: var(--ff-primary);
+}
+
+body {
+    color: var(--text-color);
+    background-color: #f6f6f6;
+}
+
+#app {
+    max-width: 34.375rem;
+    margin: 0 auto;
+    padding: 1.25rem;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+}
+
+input, button {
+    border: none;
+    background: transparent;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4rem 0 1.25rem;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+header div input {
+    height: 2rem;
+    border: 1px solid #ccc;
+    padding: 0 .5rem;
+    border-radius: .25rem 0px 0 .25rem;
+}
+
+header div button {
+    cursor: pointer;
+    height: 2rem;
+    background-color: var(--primary-color);
+    padding: 0 0.625rem;
+    border-radius: 0 .25rem .25rem 0;
+}
+
+header div button:hover {
+    filter: brightness(1.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    box-shadow: 0 .625rem 1.25rem -0.125rem rgba(0, 0, 0, 0.3);
+}
+
+table * {
+    font-size: 0.875rem;
+    color: var(--text-color);
+}
+
+table th {
+    background: var(--primary-color);
+    text-align: left;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: .938rem;
+}
+
+table th:first-child {
+    border-top-left-radius: .25rem;
+}
+
+table th:last-child {
+    border-top-right-radius: .25rem;
+}
+
+table tr {
+    background-color: #eee;
+}
+
+table tr:nth-child(odd) {
+    background-color: #e4e4e4;
+}
+
+table td {
+    padding: .938rem;
+    text-align: left;
+}
+
+td.user {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+td.user a {
+    text-decoration: none;
+}
+
+td.user a p {
+    font-weight: bold;
+}
+
+td.user img {
+    width: 3.125rem;
+    height: 3.125rem;
+
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+td button {
+    cursor: pointer;
+    color: red;
+}
+
